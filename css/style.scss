@@ -1,0 +1,506 @@
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: #eef1f6;
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+.hide {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  width: 80%;
+  margin: 2rem auto;
+
+  .mobile {
+    position: absolute;
+    top: 1.8rem;
+    right: 2rem;
+  }
+  .navigation {
+    background-color: $Dark-Violet;
+    border-radius: 10px;
+    padding: 1rem 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    .navi {
+      ul {
+        li {
+          color: white;
+          padding: 1rem 0;
+        }
+      }
+    }
+    .login {
+      display: flex;
+      width: 85%;
+      padding: 1rem 0;
+      flex-direction: column;
+      border-top: 1px solid rgb(121, 120, 120);
+      .btn-login {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+      .sign-up {
+        background-color: $Cyan;
+        border: none;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+.showcase {
+  .img {
+    overflow: hidden;
+    img {
+      width: 120%;
+      margin-left: 10%;
+    }
+  }
+
+  article {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+    p {
+      margin: 1rem;
+      color: $Grayish-Violet;
+    }
+    button {
+      width: 60%;
+      background-color: $Cyan;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: hsl(180, 80%, 67%);
+      }
+    }
+  }
+}
+
+.main {
+  background-color: $Gray;
+  position: relative;
+  margin-top: 10rem;
+  padding: 5rem 0;
+  .url {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -5%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    background-color: $Dark-Violet;
+    padding: 2rem;
+    border-radius: 10px;
+    background-image: url(../images/bg-shorten-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    input {
+      width: 100%;
+      border: none;
+      padding: 0.8rem 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    button {
+      width: 100%;
+      background-color: $Cyan;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      color: rgb(243, 229, 229);
+      font-size: 1.1rem;
+      &:hover {
+        background-color: hsl(180, 80%, 67%);
+      }
+    }
+  }
+}
+.statistics {
+  width: 90%;
+  margin: 4rem auto;
+  .advance {
+    margin: 3rem 0;
+    text-align: center;
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      color: $Grayish-Violet;
+      font-weight: 100;
+    }
+  }
+  .cards {
+    text-align: center;
+    margin-top: 5rem;
+    position: relative;
+    .v-line {
+      width: 0.5rem;
+      background-color: $Cyan;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .card {
+      background-color: white;
+      margin: 7rem 0;
+      padding: 4rem 1rem 2rem 1rem;
+      border-radius: 5px;
+      position: relative;
+      img {
+        background-color: $Dark-Violet;
+        padding: 1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 1rem 0;
+        color: $Grayish-Violet;
+      }
+    }
+  }
+}
+.footer-banner {
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-size: cover;
+  background-color: $Dark-Violet;
+  text-align: center;
+  color: white;
+  padding: 5rem 2rem;
+  h1 {
+    margin: 1rem 0;
+  }
+  button {
+    width: 60%;
+    background-color: $Cyan;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    color: rgb(243, 229, 229);
+    font-size: 1.1rem;
+    &:hover {
+      background-color: hsl(180, 80%, 67%);
+    }
+  }
+}
+footer {
+  background-color: $Very-Dark-Violet;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  h4 {
+    padding: 1rem;
+  }
+  li {
+    color: $Grayish-Violet;
+  }
+  .social {
+    margin: 2rem 0;
+    img {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.url-list {
+  background-color: white;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  .copy {
+    .copy-side {
+      border-top: 1px solid rgb(219, 219, 219);
+      margin: 1rem 0;
+      padding-top: 1rem;
+      a {
+        color: $Cyan;
+        width: 100%;
+      }
+      .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+        background-color: $Cyan;
+        border: none;
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
+        color: rgb(243, 229, 229);
+        font-size: 1.1rem;
+      }
+      .btn-active {
+        width: 100%;
+        border: none;
+        padding: 0.5rem 2rem;
+        margin-top: 0.5rem;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        background-color: $Dark-Violet;
+        color: white;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    .mobile {
+      display: none;
+    }
+    .navigation {
+      width: 100%;
+      background-color: white;
+      margin-left: 5rem;
+      display: flex;
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .navi {
+        ul {
+          display: flex;
+          li {
+            margin: 0 1rem;
+            color: $Grayish-Violet;
+            cursor: pointer;
+            &:hover {
+              color: $Dark-Violet;
+            }
+          }
+        }
+      }
+      .login {
+        width: auto;
+        flex-direction: row;
+        border-top: none;
+        padding: 0;
+        .btn-login {
+          margin-bottom: 0;
+          background-color: white;
+          font-size: 1.2rem;
+          color: $Grayish-Violet;
+          border: none;
+          margin-right: 2rem;
+          &:hover {
+            color: $Dark-Violet;
+          }
+        }
+        .sign-up {
+          background-color: $Cyan;
+          border: none;
+          color: white;
+          padding: 1rem 2rem;
+          border-radius: 30px;
+          &:hover {
+            background-color: hsl(180, 52%, 62%);
+          }
+        }
+      }
+    }
+  }
+  .showcase {
+    display: flex;
+    flex-direction: row-reverse;
+    article {
+      margin-top: 5rem;
+      text-align: left;
+      margin-left: 10%;
+      h1 {
+        font-size: 3rem;
+        width: 60%;
+        line-height: 3.5rem;
+      }
+      p {
+        width: 70%;
+        margin: 2rem 0;
+        margin-left: 0;
+      }
+      button {
+        width: 25%;
+      }
+    }
+  }
+  .main {
+    .url {
+      width: 70%;
+      display: flex;
+      gap: 1rem;
+      input {
+        width: 80%;
+        margin-bottom: 0;
+      }
+      button {
+        width: 20%;
+      }
+    }
+    .statistics {
+      .advance {
+        margin-bottom: 7rem;
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          width: 40%;
+          margin: 0 auto;
+        }
+      }
+      .cards {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        position: relative;
+        .v-line {
+          display: none;
+        }
+        .h-line {
+          height: 0.6rem;
+          width: 100%;
+          background-color: $Cyan;
+          position: absolute;
+          top: 50%;
+        }
+        .card {
+          margin: 0;
+          padding: 4rem 1.5rem 2rem 1.5rem;
+          border-radius: 10px;
+          text-align: left;
+          img {
+            left: 10%;
+            right: auto;
+          }
+        }
+        .top {
+          margin-bottom: 10%;
+        }
+        .middle {
+          margin-top: 5%;
+          margin-bottom: 5%;
+        }
+        .last {
+          margin-top: 10%;
+        }
+      }
+    }
+  }
+  .footer-banner {
+    background-image: url(../images/bg-boost-desktop.svg);
+    padding: 3rem;
+    h1 {
+      font-size: 3rem;
+    }
+    button {
+      width: 15%;
+    }
+  }
+  footer {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      .menu {
+        h4 {
+          padding: 1rem 0;
+        }
+        ul {
+          li {
+            font-size: 1rem;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .social {
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  .url-list {
+    padding: 0 2rem;
+    width: 70%;
+    margin: 1rem auto;
+    .copy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .web-link {
+        padding: 0;
+      }
+      .copy-side {
+        a {
+          width: auto;
+        }
+        // width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        align-items: center;
+        border-top: none;
+        padding: 0;
+        text-align: center;
+        .btn {
+          width: 25%;
+          padding: 0.5rem 1rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
